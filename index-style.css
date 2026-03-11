@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Chango&family=Schoolbell&family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap');
+
+.background-container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(254, 255, 240);
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.get-started-container {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    justify-content: center;
+    max-width: 640px;
+    width: 100%;
+    padding-top: 300px;
+    padding: 32px 16px;
+    background-color: rgba(240, 255, 255, 0.773);
+    border-radius: 10px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#hollow {
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Chango', 'Zalando Sans SemiExpanded', Arial, sans-serif;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#innocent-text {
+    color: rgb(254, 59, 41);
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Schoolbell', 'Zalando Sans SemiExpanded', Arial, sans-serif;
+    text-shadow: 0 2px 4px rgba(254, 59, 41, 0.5);
+}
+
+#get-started-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff402e;
+    color: white;
+    font-family: 'Schoolbell', 'Zalando Sans SemiExpanded', Arial, sans-serif;
+    font-size: 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 12px 24px rgba(255, 64, 46, 0.4);
+}
+
+h1 {
+    font-family: 'Chango', sans-serif;
+}
+
+h2 {
+    font-family: 'Schoolbell', Calibri, sans-serif;
+}
+
+p {
+    font-family: 'Zalando Sans SemiExpanded', Calibri, sans-serif;
+}
