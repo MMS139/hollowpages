@@ -8,7 +8,6 @@ body {
 
 .menu {
     display: flex;
-    align-items: center;
     gap: 20px;
     padding: 10px 150px;
     width: 100%;
@@ -17,30 +16,70 @@ body {
 
 .menu .left-side {
     display: flex;
+    justify-content: flex-start;
     align-items: center;
     gap: 20px;
-    position: left;
 }
 
 .menu .right-side {
     display: flex;
+    justify-content: flex-end;
     align-items: center;
     gap: 20px;
-    float: right;
 }
 
 #menu-logo {
     width: 60px;
     height: 60px;
+    transition: width 0.3s ease, height 0.3s ease;
+}
+
+#menu-logo:hover {
+    width: 65px;
+    height: 65px;
 }
 
 #menu-home-text {
     font-weight: bold;
+    margin-right: 20px;
 }
 
 .menu a {
     color: white;
     text-decoration: none;
     font-size: 18px;
-    transition: color 0.3s ease;
+    transition: color 0.2s ease;
+}
+
+.menu a:hover {
+    color: #ffa719;
+}
+
+.stories-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #e6eaff;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 8px;
+}
+
+.stories-dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: all 0.2s ease;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.stories-dropdown-content a:hover {
+  background-color: #dbe0f9;
+  color: black;
+  font-size: 18px;
+}
+
+.stories-dropdown:hover .stories-dropdown-content {
+  display: block;
 }
