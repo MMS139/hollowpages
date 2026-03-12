@@ -47,11 +47,16 @@
 }
 
 #innocent-text {
-    color: rgb(254, 59, 41);
+    font-family: 'Schoolbell', 'Zalando Sans SemiExpanded', Arial, sans-serif;
     font-weight: bold;
     font-style: italic;
-    font-family: 'Schoolbell', 'Zalando Sans SemiExpanded', Arial, sans-serif;
+    transition: text-shadow 0.5s ease, color 0.5s ease;
+}
+
+#innocent-text:hover,
+#innocent-text:focus-visible {
     text-shadow: 0 2px 4px rgba(254, 59, 41, 0.5);
+    color: rgb(254, 59, 41);
 }
 
 .get-started-button {

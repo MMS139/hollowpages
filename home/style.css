@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Chango&family=Schoolbell&family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap');
+
+body {
+    background-color: #fffee3;
+    font-family: 'Zalando Sans SemiExpanded', sans-serif;
+    margin: 0;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 150px;
+    width: 100%;
+    background-color: rgb(14, 47, 167);
+}
+
+.menu .left-side {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: left;
+}
+
+.menu .right-side {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    float: right;
+}
+
+#menu-logo {
+    width: 60px;
+    height: 60px;
+}
+
+#menu-home-text {
+    font-weight: bold;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
