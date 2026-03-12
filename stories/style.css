@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Chango&family=Schoolbell&family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap');
+
+body {
+    background-color: #fffee3;
+    font-family: 'Zalando Sans SemiExpanded', sans-serif;
+    margin: 0;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    padding: 10px 150px;
+    width: 82.5%;
+    background-color: rgb(14, 47, 167);
+    position: relative;
+    z-index: 5;
+}
+
+.menu .left-side {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu .right-side {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+#menu-logo {
+    width: 60px;
+    height: 60px;
+    transition: width 0.3s ease, height 0.3s ease;
+}
+
+#menu-logo:hover {
+    width: 70px;
+    height: 70px;
+}
+
+#menu-home-text {
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.2s ease;
+}
+
+.menu a:hover {
+    color: #ffa719;
+}
+
+.stories-dropdown-content {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  background-color: #e6eaff;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 8px;
+  visibility: hidden;
+  transition: all 0.2s ease;
+  margin: -2px;
+}
+
+.stories-dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: all 0.2s ease;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.stories-dropdown-content a:hover {
+  background-color: #dbe0f9;
+  color: black;
+  font-size: 18px;
+}
+
+.stories-dropdown:hover .stories-dropdown-content {
+  opacity: 1;
+  transform: translateY(2px);
+  visibility: visible;
+}
