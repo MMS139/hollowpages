@@ -94,6 +94,7 @@ body {
   visibility: visible;
 }
 
+/* -------------------- Content -------------------- */
 .top-container {
     position: relative;
     display: inline-block;
@@ -130,7 +131,6 @@ body {
     margin-bottom: 10px;
 }
 
-/* -------------------- Content -------------------- */
 .main-content {
     display: flex;
     flex-direction: column;
