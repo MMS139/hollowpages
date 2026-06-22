@@ -6,6 +6,25 @@ body {
     margin: 0;
 }
 
+h1 {
+    margin-top: 0;
+    font-size: 40px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+hr {
+    width: 125%;
+    border: none;
+    height: 5px;
+    border-radius: 2px;
+    background-color: #c6c6a4;
+    margin: 40px 0;
+}
+
 /* -------------------- Menu -------------------- */
 .menu {
     display: flex;
@@ -95,11 +114,12 @@ body {
 }
 
 /* -------------------- Content -------------------- */
+/* ---------- Index Page ---------- */
 .top-container {
     position: relative;
     display: inline-block;
     width: 100.05%;
-    height: 600px;
+    height: 400px;
     overflow: hidden;
     z-index: 0;
 }
@@ -114,7 +134,7 @@ body {
 
 #quote-text {
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 40%;
     transform: translate(-50%, -50%);
     color: white;
@@ -135,7 +155,125 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 150px;
+    padding: 20px 200px;
+}
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#about-logo {
+    height: 12em;
+    width: 100%;
+    object-fit: cover;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.team b {
+    font-size: 18px;
+}
+
+.story-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.story-display table {
+    width: 100%;
+    border: 1px solid #c6c6a4;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #e6eaff;
+}
+
+.story-display td {
+    padding: 10px;
+}
+
+.story-display td b {
+    font-size: 32px;
+}
+
+.story-display img {
+    width: 100%;
+    height: 14em;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.story-display button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font: inherit;
+    font-weight: bold;
+    background-color: rgb(14, 47, 167);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.story-display button a {
+    color: white;
+    text-decoration: none;
+}
+
+.story-display button:hover, .story-display button:focus-visible {
+    background-color: #ffa719;
+}
+
+.story1 {
+    margin-top: 40px;
+    border-radius: 20px;
+}
+
+.reviews td {
+    padding: 0 30px;
+}
+
+/* ---------- Contact Page ---------- */
+#contact-info {
+    width: 100%;
+    border: 1px solid #c6c6a4;
+    border-collapse: collapse;
+}
+
+#contact-info th {
+    padding: 10px;
+    font-size: 28px;
+    color: white;
+}
+
+#contact-info td {
+    padding: 20px;
+    text-align: center;
+    background-color: #f2f2f2;
+    width: 50%;
+}
+
+#contact-info td img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+#contact-info td span {
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 
 /* -------------------- Footer -------------------- */
